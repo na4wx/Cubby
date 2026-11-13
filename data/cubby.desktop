@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Cubby
+Comment=Left-edge dock with one workspace per app
+Exec=cubby
+Icon=cubby
+Terminal=false
+Categories=System;Utility;
+StartupNotify=false

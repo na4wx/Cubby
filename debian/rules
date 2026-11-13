@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python3
+
+override_dh_auto_install:
+	install -D -m 0755 cubby.py debian/cubby/usr/bin/cubby
+	sed -i "1s,^#!.*,#!/usr/bin/python3," debian/cubby/usr/bin/cubby
+	install -D -m 0644 data/cubby.desktop debian/cubby/usr/share/applications/cubby.desktop
+	install -D -m 0644 data/cubby.svg debian/cubby/usr/share/icons/hicolor/scalable/apps/cubby.svg
+	install -D -m 0644 data/cubby-autostart.desktop debian/cubby/usr/share/doc/cubby/examples/cubby-autostart.desktop

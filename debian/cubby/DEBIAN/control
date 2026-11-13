@@ -1,0 +1,22 @@
+Package: cubby
+Version: 0.1.0
+Architecture: all
+Maintainer: Jordan Webb <jwebb@shekinatech.com>
+Installed-Size: 80
+Depends: gir1.2-gtk-3.0, gir1.2-wnck-3.0, python3, python3-gi, x11-utils
+Recommends: xfce4-terminal | xterm
+Suggests: network-manager-gnome, xfce4-session
+Section: x11
+Priority: optional
+Homepage: https://github.com/na4wx/Cubby
+Description: left-edge dock with one workspace per app
+ Cubby is a dock for X11 desktops that puts every application on its own
+ workspace. Opening an app moves it to a fresh workspace and adds a button to
+ the dock; clicking the button jumps to that app.
+ .
+ It has an app drawer, pinned apps and folders, support for launchers that
+ run in a terminal, a network indicator, a clock with calendar and a user
+ menu. Each app can opt out of having its own workspace.
+ .
+ Cubby needs an X11 session with an EWMH-compliant window manager. It is
+ developed on XFCE and does not work on Wayland.

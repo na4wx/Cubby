@@ -1,0 +1,40 @@
+.TH CUBBY 1 "2026" "cubby 0.1.0" "User Commands"
+.SH NAME
+cubby \- left-edge dock with one workspace per app
+.SH SYNOPSIS
+.B cubby
+[\fB\-\-width\fR \fIPX\fR] [\fB\-\-icon\fR \fIPX\fR] [\fB\-\-config\fR \fIFILE\fR] [\fB\-\-respect\-top\fR] [\fB\-\-respect\-bottom\fR]
+.SH DESCRIPTION
+.B cubby
+is a dock for X11 desktops. Each application is moved to its own workspace and
+gets a button in the dock; clicking the button switches to that workspace.
+The dock also has an app drawer, pinned apps and folders, a network indicator,
+a clock with calendar and a user menu.
+.SH OPTIONS
+.TP
+.BI \-\-width " PX"
+Dock width.
+.TP
+.BI \-\-icon " PX"
+Icon size.
+.TP
+.BI \-\-config " FILE"
+Config file. Default: \fI~/.config/cubby/dock.json\fR.
+.TP
+.B \-\-respect\-top
+Start below existing top panels instead of at the top of the screen.
+.TP
+.B \-\-respect\-bottom
+End above existing bottom panels instead of at the bottom of the screen.
+.SH FILES
+.TP
+.I ~/.config/cubby/dock.json
+Pins, folders, panel options and per\-app workspace settings.
+.TP
+.I /usr/share/doc/cubby/examples/cubby\-autostart.desktop
+Example autostart entry; copy it to \fI~/.config/autostart/\fR.
+.SH NOTES
+Requires an X11 session with an EWMH\-compliant window manager. It does not
+work on Wayland.
+.SH AUTHOR
+Jordan Webb.

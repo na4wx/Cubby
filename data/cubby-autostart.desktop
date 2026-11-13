@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Cubby
+Comment=Left-edge dock with app drawer, pins, folders and per-app workspaces
+Exec=sh -c "sleep 3 && exec cubby"
+Terminal=false
+X-GNOME-Autostart-enabled=true
