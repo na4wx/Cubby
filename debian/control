@@ -29,4 +29,4 @@ Description: left-edge dock with one workspace per app
  menu. Each app can opt out of having its own workspace.
  .
  Cubby needs an X11 session with an EWMH-compliant window manager. It is
- developed on XFCE and does not work on Wayland.
+ developed on Xfce and does not work on Wayland.

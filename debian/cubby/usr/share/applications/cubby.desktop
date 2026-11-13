@@ -5,5 +5,6 @@ Comment=Left-edge dock with one workspace per app
 Exec=cubby
 Icon=cubby
 Terminal=false
+Keywords=dock;launcher;workspace;taskbar;
 Categories=System;Utility;
 StartupNotify=false
